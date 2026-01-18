@@ -1,6 +1,7 @@
 import pandas as pd
 from src.config import ID_COL
 
+
 def load_data(path):
     df = pd.read_csv(path)
     df.columns = df.columns.str.strip()

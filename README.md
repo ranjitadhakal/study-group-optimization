@@ -1,0 +1,4 @@
+- Create virtual env `python -m venv venv`
+- Activate `venv\Scripts\activate`
+- Run `pip install -r requirements.txt`
+- Run `streamlit run app.py`

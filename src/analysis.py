@@ -1,6 +1,7 @@
 from src.config import GPA_COL, ID_COL, INTEREST_COLS
 from src.similarity import jaccard_similarity
 
+
 def analyze_gpa(df, groups):
     for i, group in enumerate(groups):
         gpas = df[df[ID_COL].isin(group)][GPA_COL]
@@ -8,6 +9,7 @@ def analyze_gpa(df, groups):
         print(f"  Size: {len(gpas)}")
         print(f"  Avg GPA: {gpas.mean():.3f}")
         print(f"  GPA Range: {(gpas.max() - gpas.min()):.3f}")
+
 
 def interest_overlap(df, groups):
     for i, group in enumerate(groups):

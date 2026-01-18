@@ -1,6 +1,7 @@
 from collections import defaultdict
 import community as community_louvain
 
+
 def detect_communities(G):
     partition = community_louvain.best_partition(G, weight="weight")
 
